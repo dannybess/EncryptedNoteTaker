@@ -13,6 +13,9 @@ import CoreData
 class RegisterViewController : UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var licenseKeyTextField: UITextField!
+    
+    let secret = "18asf902"
     
     override func viewDidLoad() {
         
@@ -44,30 +47,38 @@ class RegisterViewController : UIViewController {
         return randomString
     }
     
+    func bytes2String(_ array: [UInt8]) -> String {
+        return String(data: Data(bytes: array, count: array.count), encoding: .utf8) ?? ""
+    }
     
+    func validHashGen(val : String) -> Data {
+        var initial = sha256(string: val + secret)! as Data
+        var backToString = initial.map { String(format: "%02x", $0) }.joined()
+        for i in 0..<4 {
+            initial = sha256(string: backToString as String)! as Data
+            backToString = initial.map { String(format: "%02x", $0) }.joined()
+        }
+        return initial as Data
+    }
+ 
     @IBAction func doneClicked(_ sender: Any) {
         if(self.nameTextField.text != "") {
-            let randomPass = generateRandomKey(length: 5)
-            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainerLicense.viewContext
-            let licenseKey = NSEntityDescription.insertNewObject(forEntityName: "License", into: context) as! License
-            licenseKey.key = sha256(string: randomPass + "secretKey")! as NSData
-            licenseKey.name = self.nameTextField.text!
-            // save and go back to home page
-            do {
-                try context.save()
-                let alert = UIAlertController(title: "Success", message: "Your license key is \(randomPass)!", preferredStyle: UIAlertControllerStyle.alert)
+            let hash = validHashGen(val: self.nameTextField.text!)
+            let hashString = hash.map { String(format: "%02x", $0) }.joined()
+            if(hashString == licenseKeyTextField!.text!) {
+                emojiEnabled = true
+                let alert = UIAlertController(title: "Success", message: "You are now verified", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action: UIAlertAction!) in
                     self.performSegue(withIdentifier: "goBackToHome", sender: self)
                 }))
                 self.present(alert, animated: true, completion: nil)
-            } catch let saveError as NSError {
-                print("Save error: \(saveError.localizedDescription)")
             }
-        }
-        else {
-            let alert = UIAlertController(title: "Error", message: "Please enter your name!", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            else {
+                print(hashString)
+                let alert = UIAlertController(title: "Error", message: "Your license key does not match!", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
         }
     }
     

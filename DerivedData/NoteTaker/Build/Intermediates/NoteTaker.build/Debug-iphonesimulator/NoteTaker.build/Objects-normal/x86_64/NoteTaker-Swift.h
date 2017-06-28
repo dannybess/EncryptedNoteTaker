@@ -223,7 +223,6 @@ SWIFT_CLASS("_TtC9NoteTaker23NoteTakerViewController")
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (NSData * _Nullable)sha256WithString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
-- (IBAction)activateClicked:(id _Nonnull)sender;
 - (BOOL)linearSearchWithArray:(NSArray<License *> * _Nonnull)array value:(NSData * _Nonnull)value SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
@@ -239,9 +238,13 @@ SWIFT_CLASS("_TtC9NoteTaker23NoteTakerViewController")
 SWIFT_CLASS("_TtC9NoteTaker22RegisterViewController")
 @interface RegisterViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified licenseKeyTextField;
+@property (nonatomic, readonly, copy) NSString * _Nonnull secret;
 - (void)viewDidLoad;
 - (NSData * _Nullable)sha256WithString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)generateRandomKeyWithLength:(NSInteger)length SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)bytes2String:(NSArray<NSNumber *> * _Nonnull)array SWIFT_WARN_UNUSED_RESULT;
+- (NSData * _Nonnull)validHashGenWithVal:(NSString * _Nonnull)val SWIFT_WARN_UNUSED_RESULT;
 - (IBAction)doneClicked:(id _Nonnull)sender;
 @property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
 - (void)didReceiveMemoryWarning;

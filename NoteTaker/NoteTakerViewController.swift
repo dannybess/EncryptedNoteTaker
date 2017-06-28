@@ -41,32 +41,6 @@ class NoteTakerViewController: UIViewController, UITableViewDelegate, UITableVie
         return digestData
     }
     
-    // activate license key
-    @IBAction func activateClicked(_ sender: Any) {
-        let alert = UIAlertController(title: "Activate Key", message: "Please enter your name!", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action: UIAlertAction!) in
-            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainerLicense.viewContext
-            let request = NSFetchRequest<License>(entityName: "License")
-            self.licenseKeys = try! context.fetch(request)
-            let rehashedKey = self.sha256(string: alert.textFields![0].text! + "secretKey")! as NSData
-            if(self.linearSearch(array: self.licenseKeys, value: rehashedKey)) {
-                print("got em")
-                emojiEnabled = true
-                let alert = UIAlertController(title: "Success", message: "You can now save emojis!", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-            }
-            else {
-                let alert = UIAlertController(title: "Error", message: "Oops! Looks like you haven't registered a license key yet!", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-            }
-        }))
-        alert.addTextField { (textField : UITextField!) -> Void in
-            textField.placeholder = "Please Enter Your Full Name"
-        }
-        self.present(alert, animated: true, completion: nil)
-    }
     //82756
     func linearSearch(array : [License], value : NSData) -> Bool {
         for key in array {

@@ -1,9 +1,0 @@
-version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
-options: "19b67ea3c1343d17efbf28104d0a4a54"
-build_time: [551903109, 342885000]
-inputs:
-  "/Users/dbessonov/Downloads/iOS-NoteTaker-master/NoteTaker/NewNoteViewController.swift": [551228211, 0]
-  "/Users/dbessonov/Downloads/iOS-NoteTaker-master/Note+CoreDataClass.swift": [551225411, 0]
-  "/Users/dbessonov/Downloads/iOS-NoteTaker-master/NoteTaker/NoteTakerViewController.swift": [551902965, 0]
-  "/Users/dbessonov/Downloads/iOS-NoteTaker-master/NoteTaker/AppDelegate.swift": [546018194, 0]
-  "/Users/dbessonov/Downloads/iOS-NoteTaker-master/NoteTaker/RNCryptor.swift": [541546678, 0]
