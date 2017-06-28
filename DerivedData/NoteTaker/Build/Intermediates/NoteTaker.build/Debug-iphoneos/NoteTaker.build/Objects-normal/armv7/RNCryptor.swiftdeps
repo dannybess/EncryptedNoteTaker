@@ -1,0 +1,1044 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RNCryptorType"
+- "RNCryptor"
+- "CryptorOperation"
+- "Engine"
+- "V3"
+- "OverflowingBuffer"
+provides-nominal:
+- "P9NoteTaker13RNCryptorType"
+- "O9NoteTaker9RNCryptor"
+- "OO9NoteTaker9RNCryptor5Error"
+- "CO9NoteTaker9RNCryptor9Encryptor"
+- "CO9NoteTaker9RNCryptor9Decryptor"
+- "CO9NoteTaker9RNCryptor8FormatV3"
+- "CO9NoteTaker9RNCryptor11EncryptorV3"
+- "CO9NoteTaker9RNCryptor11DecryptorV3"
+- "O9NoteTaker16CryptorOperation"
+- "C9NoteTaker6Engine"
+- "C9NoteTaker17OverflowingBuffer"
+provides-member:
+- ["P9NoteTaker13RNCryptorType", ""]
+- ["O9NoteTaker9RNCryptor", ""]
+- ["OO9NoteTaker9RNCryptor5Error", ""]
+- ["CO9NoteTaker9RNCryptor9Encryptor", ""]
+- ["CO9NoteTaker9RNCryptor9Decryptor", ""]
+- ["CO9NoteTaker9RNCryptor8FormatV3", ""]
+- ["CO9NoteTaker9RNCryptor11EncryptorV3", ""]
+- ["CO9NoteTaker9RNCryptor11DecryptorV3", ""]
+- ["O9NoteTaker16CryptorOperation", ""]
+- ["C9NoteTaker6Engine", ""]
+- ["C9NoteTaker17OverflowingBuffer", ""]
+- ["O9NoteTaker9RNCryptor", "FormatV3"]
+- ["O9NoteTaker9RNCryptor", "EncryptorV3"]
+- ["O9NoteTaker9RNCryptor", "DecryptorV3"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "%"
+- "+"
+- !private "-"
+- !private "..."
+- !private "..<"
+- !private "<"
+- !private "<="
+- "=="
+- !private ">"
+- !private ">="
+- !private "Array"
+- "AssignmentPrecedence"
+- !private "Bool"
+- !private "BooleanLiteralType"
+- !private "CCAlgorithm"
+- !private "CCCryptorCreate"
+- !private "CCCryptorFinal"
+- !private "CCCryptorGetOutputLength"
+- "CCCryptorRef"
+- !private "CCCryptorRelease"
+- !private "CCCryptorStatus"
+- !private "CCCryptorUpdate"
+- !private "CCHmacAlgorithm"
+- !private "CCHmacContext"
+- !private "CCHmacFinal"
+- !private "CCHmacInit"
+- !private "CCHmacUpdate"
+- !private "CCKeyDerivationPBKDF"
+- "CCOperation"
+- !private "CCOptions"
+- !private "CCPBKDFAlgorithm"
+- !private "CCPseudoRandomAlgorithm"
+- "CC_SHA256_DIGEST_LENGTH"
+- "Collection"
+- "Credential"
+- "CryptorOperation"
+- "Data"
+- "DecryptorEngineV3"
+- "Engine"
+- "HMACV3"
+- "Int"
+- !private "Int8"
+- "OverflowingBuffer"
+- "RNCryptor"
+- "RNCryptorType"
+- !private "Range"
+- !private "SecRandomCopyBytes"
+- "String"
+- !private "StringLiteralType"
+- "Swift"
+- !private "TernaryPrecedence"
+- !private "UInt32"
+- "UInt8"
+- !private "UnicodeScalarType"
+- !private "UnsafeMutablePointer"
+- !private "UnsafePointer"
+- "V3"
+- "VersionedDecryptorType"
+- !private "^"
+- !private "assert"
+- !private "errSecSuccess"
+- !private "fatalError"
+- !private "isEqualInConsistentTime"
+- !private "kCCAlgorithmAES128"
+- "kCCBlockSizeAES128"
+- !private "kCCHmacAlgSHA256"
+- "kCCKeySizeAES256"
+- !private "kCCOptionPKCS7Padding"
+- !private "kCCPBKDF2"
+- !private "kCCPRFHmacAlgSHA1"
+- !private "kCCSuccess"
+- !private "kSecRandomDefault"
+- !private "malloc"
+- !private "precondition"
+- !private "|="
+- !private "~="
+depends-member:
+- !private ["Ps9AnyObject", "CCAlgorithm"]
+- !private ["Ps9AnyObject", "CCCryptorCreate"]
+- !private ["Ps9AnyObject", "CCCryptorFinal"]
+- !private ["Ps9AnyObject", "CCCryptorGetOutputLength"]
+- !private ["Ps9AnyObject", "CCCryptorRelease"]
+- !private ["Ps9AnyObject", "CCCryptorStatus"]
+- !private ["Ps9AnyObject", "CCCryptorUpdate"]
+- !private ["Ps9AnyObject", "CCHmacAlgorithm"]
+- !private ["Ps9AnyObject", "CCHmacContext"]
+- !private ["Ps9AnyObject", "CCHmacFinal"]
+- !private ["Ps9AnyObject", "CCHmacInit"]
+- !private ["Ps9AnyObject", "CCHmacUpdate"]
+- !private ["Ps9AnyObject", "CCKeyDerivationPBKDF"]
+- !private ["Ps9AnyObject", "CCOptions"]
+- !private ["Ps9AnyObject", "CCPBKDFAlgorithm"]
+- !private ["Ps9AnyObject", "CCPseudoRandomAlgorithm"]
+- ["Ps9AnyObject", "CC_SHA256_DIGEST_LENGTH"]
+- ["Ps9AnyObject", "Data"]
+- !private ["Ps9AnyObject", "DecryptorEngineV3"]
+- ["Ps9AnyObject", "DecryptorV3"]
+- !private ["Ps9AnyObject", "Encoding"]
+- !private ["Ps9AnyObject", "EncryptorV3"]
+- !private ["Ps9AnyObject", "Engine"]
+- !private ["Ps9AnyObject", "Error"]
+- !private ["Ps9AnyObject", "HMACV3"]
+- ["Ps9AnyObject", "Int"]
+- !private ["Ps9AnyObject", "OverflowingBuffer"]
+- !private ["Ps9AnyObject", "RNCryptor"]
+- !private ["Ps9AnyObject", "Range"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "UInt32"]
+- ["Ps9AnyObject", "UInt8"]
+- !private ["Ps9AnyObject", "V3"]
+- !private ["Ps9AnyObject", "assert"]
+- !private ["Ps9AnyObject", "buffer"]
+- ["Ps9AnyObject", "canDecrypt"]
+- !private ["Ps9AnyObject", "capacity"]
+- !private ["Ps9AnyObject", "context"]
+- !private ["Ps9AnyObject", "credential"]
+- !private ["Ps9AnyObject", "cryptor"]
+- !private ["Ps9AnyObject", "data"]
+- !private ["Ps9AnyObject", "decrypt"]
+- !private ["Ps9AnyObject", "decryptor"]
+- !private ["Ps9AnyObject", "decryptorEngine"]
+- !private ["Ps9AnyObject", "decryptors"]
+- !private ["Ps9AnyObject", "encrypt"]
+- !private ["Ps9AnyObject", "encryptor"]
+- !private ["Ps9AnyObject", "engine"]
+- !private ["Ps9AnyObject", "fatalError"]
+- ["Ps9AnyObject", "finalData"]
+- !private ["Ps9AnyObject", "formatVersion"]
+- !private ["Ps9AnyObject", "handle"]
+- !private ["Ps9AnyObject", "hmac"]
+- !private ["Ps9AnyObject", "hmacSize"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isEqualInConsistentTime"]
+- !private ["Ps9AnyObject", "ivSize"]
+- !private ["Ps9AnyObject", "kCCAlgorithmAES128"]
+- ["Ps9AnyObject", "kCCBlockSizeAES128"]
+- !private ["Ps9AnyObject", "kCCHmacAlgSHA256"]
+- ["Ps9AnyObject", "kCCKeySizeAES256"]
+- !private ["Ps9AnyObject", "kCCOptionPKCS7Padding"]
+- !private ["Ps9AnyObject", "kCCPBKDF2"]
+- !private ["Ps9AnyObject", "kCCPRFHmacAlgSHA1"]
+- !private ["Ps9AnyObject", "kCCSuccess"]
+- !private ["Ps9AnyObject", "keyHeaderSize"]
+- !private ["Ps9AnyObject", "keySize"]
+- !private ["Ps9AnyObject", "makeEngine"]
+- !private ["Ps9AnyObject", "makeKey"]
+- !private ["Ps9AnyObject", "oneshot"]
+- !private ["Ps9AnyObject", "password"]
+- !private ["Ps9AnyObject", "passwordHeaderSize"]
+- !private ["Ps9AnyObject", "pendingHeader"]
+- ["Ps9AnyObject", "preambleSize"]
+- !private ["Ps9AnyObject", "precondition"]
+- !private ["Ps9AnyObject", "requiredHeaderSize"]
+- !private ["Ps9AnyObject", "saltSize"]
+- !private ["Ps9AnyObject", "sendAll"]
+- !private ["Ps9AnyObject", "sendSome"]
+- !private ["Ps9AnyObject", "sizeBuffer"]
+- ["Ps9AnyObject", "update"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "append"]
+- !private ["Sa", "isEmpty"]
+- !private ["Sa", "splitPassFail"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "count"]
+- !private ["Ps23BidirectionalCollection", "enumerated"]
+- ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps23BidirectionalCollection", "isEmpty"]
+- !private ["Ps23BidirectionalCollection", "malloc"]
+- !private ["Ps23BidirectionalCollection", "replaceSubrange"]
+- !private ["Ps23BidirectionalCollection", "splitPassFail"]
+- !private ["Ps23BidirectionalCollection", "subdata"]
+- !private ["Ps23BidirectionalCollection", "subscript"]
+- !private ["Ps23BidirectionalCollection", "withUnsafeBytes"]
+- !private ["Ps23BidirectionalCollection", "withUnsafeMutableBytes"]
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- ["Ps17BitwiseOperations", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["VSC13CCHmacContext", "init"]
+- !private ["Ps7CVarArg", "Encoding"]
+- !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "data"]
+- !private ["Ps7CVarArg", "hashValue"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isEmpty"]
+- !private ["Ps7CVarArg", "splitPassFail"]
+- !private ["Ps10Collection", "Bool"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "count"]
+- !private ["Ps10Collection", "enumerated"]
+- ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "isEmpty"]
+- !private ["Ps10Collection", "malloc"]
+- !private ["Ps10Collection", "replaceSubrange"]
+- !private ["Ps10Collection", "splitPassFail"]
+- !private ["Ps10Collection", "subdata"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Collection", "withUnsafeBytes"]
+- !private ["Ps10Collection", "withUnsafeMutableBytes"]
+- !private ["Ps10Comparable", "Encoding"]
+- !private ["Ps10Comparable", "data"]
+- !private ["Ps10Comparable", "hashValue"]
+- ["Ps10Comparable", "init"]
+- ["O9NoteTaker16CryptorOperation", "RawValue"]
+- ["O9NoteTaker16CryptorOperation", "_toAnyHashable"]
+- ["O9NoteTaker16CryptorOperation", "decrypt"]
+- ["O9NoteTaker16CryptorOperation", "deinit"]
+- ["O9NoteTaker16CryptorOperation", "encrypt"]
+- ["O9NoteTaker16CryptorOperation", "hashValue"]
+- ["O9NoteTaker16CryptorOperation", "init"]
+- ["O9NoteTaker16CryptorOperation", "rawValue"]
+- !private ["Ps28CustomDebugStringConvertible", "Encoding"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "data"]
+- !private ["Ps28CustomDebugStringConvertible", "enumerated"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isEmpty"]
+- !private ["Ps28CustomDebugStringConvertible", "malloc"]
+- !private ["Ps28CustomDebugStringConvertible", "replaceSubrange"]
+- !private ["Ps28CustomDebugStringConvertible", "splitPassFail"]
+- !private ["Ps28CustomDebugStringConvertible", "subdata"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "withUnsafeBytes"]
+- !private ["Ps28CustomDebugStringConvertible", "withUnsafeMutableBytes"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Encoding"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "data"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Encoding"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "count"]
+- !private ["Ps17CustomReflectable", "data"]
+- !private ["Ps17CustomReflectable", "enumerated"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "isEmpty"]
+- !private ["Ps17CustomReflectable", "malloc"]
+- !private ["Ps17CustomReflectable", "replaceSubrange"]
+- !private ["Ps17CustomReflectable", "splitPassFail"]
+- !private ["Ps17CustomReflectable", "subdata"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps17CustomReflectable", "withUnsafeBytes"]
+- !private ["Ps17CustomReflectable", "withUnsafeMutableBytes"]
+- !private ["Ps23CustomStringConvertible", "Encoding"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "data"]
+- !private ["Ps23CustomStringConvertible", "enumerated"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isEmpty"]
+- !private ["Ps23CustomStringConvertible", "malloc"]
+- !private ["Ps23CustomStringConvertible", "replaceSubrange"]
+- !private ["Ps23CustomStringConvertible", "splitPassFail"]
+- !private ["Ps23CustomStringConvertible", "subdata"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "utf8"]
+- !private ["Ps23CustomStringConvertible", "withUnsafeBytes"]
+- !private ["Ps23CustomStringConvertible", "withUnsafeMutableBytes"]
+- !private ["V10Foundation4Data", "Int"]
+- !private ["V10Foundation4Data", "append"]
+- !private ["V10Foundation4Data", "count"]
+- !private ["V10Foundation4Data", "enumerated"]
+- ["V10Foundation4Data", "init"]
+- !private ["V10Foundation4Data", "malloc"]
+- !private ["V10Foundation4Data", "replaceSubrange"]
+- !private ["V10Foundation4Data", "subdata"]
+- !private ["V10Foundation4Data", "subscript"]
+- !private ["V10Foundation4Data", "withUnsafeBytes"]
+- !private ["V10Foundation4Data", "withUnsafeMutableBytes"]
+- !private ["OV10Foundation4Data11Deallocator", "free"]
+- ["CO9NoteTaker9RNCryptor9Decryptor", "Data"]
+- ["CO9NoteTaker9RNCryptor9Decryptor", "DecryptorV3"]
+- !private ["CO9NoteTaker9RNCryptor9Decryptor", "Error"]
+- ["CO9NoteTaker9RNCryptor9Decryptor", "RNCryptorType"]
+- ["CO9NoteTaker9RNCryptor9Decryptor", "String"]
+- ["CO9NoteTaker9RNCryptor9Decryptor", "VersionedDecryptorType"]
+- !private ["CO9NoteTaker9RNCryptor9Decryptor", "assert"]
+- !private ["CO9NoteTaker9RNCryptor9Decryptor", "buffer"]
+- ["CO9NoteTaker9RNCryptor9Decryptor", "decrypt"]
+- !private ["CO9NoteTaker9RNCryptor9Decryptor", "decryptor"]
+- !private ["CO9NoteTaker9RNCryptor9Decryptor", "decryptors"]
+- ["CO9NoteTaker9RNCryptor9Decryptor", "deinit"]
+- ["CO9NoteTaker9RNCryptor9Decryptor", "finalData"]
+- ["CO9NoteTaker9RNCryptor9Decryptor", "init"]
+- !private ["CO9NoteTaker9RNCryptor9Decryptor", "oneshot"]
+- !private ["CO9NoteTaker9RNCryptor9Decryptor", "password"]
+- ["CO9NoteTaker9RNCryptor9Decryptor", "update"]
+- !private ["CO9NoteTaker9RNCryptor11DecryptorV3", "Bool"]
+- ["CO9NoteTaker9RNCryptor11DecryptorV3", "Credential"]
+- ["CO9NoteTaker9RNCryptor11DecryptorV3", "Data"]
+- ["CO9NoteTaker9RNCryptor11DecryptorV3", "DecryptorEngineV3"]
+- !private ["CO9NoteTaker9RNCryptor11DecryptorV3", "DecryptorV3"]
+- !private ["CO9NoteTaker9RNCryptor11DecryptorV3", "Error"]
+- ["CO9NoteTaker9RNCryptor11DecryptorV3", "Int"]
+- !private ["CO9NoteTaker9RNCryptor11DecryptorV3", "Range"]
+- ["CO9NoteTaker9RNCryptor11DecryptorV3", "String"]
+- !private ["CO9NoteTaker9RNCryptor11DecryptorV3", "V3"]
+- !private ["CO9NoteTaker9RNCryptor11DecryptorV3", "assert"]
+- !private ["CO9NoteTaker9RNCryptor11DecryptorV3", "buffer"]
+- ["CO9NoteTaker9RNCryptor11DecryptorV3", "canDecrypt"]
+- !private ["CO9NoteTaker9RNCryptor11DecryptorV3", "credential"]
+- ["CO9NoteTaker9RNCryptor11DecryptorV3", "decrypt"]
+- !private ["CO9NoteTaker9RNCryptor11DecryptorV3", "decryptorEngine"]
+- ["CO9NoteTaker9RNCryptor11DecryptorV3", "deinit"]
+- ["CO9NoteTaker9RNCryptor11DecryptorV3", "finalData"]
+- ["CO9NoteTaker9RNCryptor11DecryptorV3", "init"]
+- !private ["CO9NoteTaker9RNCryptor11DecryptorV3", "makeEngine"]
+- !private ["CO9NoteTaker9RNCryptor11DecryptorV3", "oneshot"]
+- ["CO9NoteTaker9RNCryptor11DecryptorV3", "preambleSize"]
+- !private ["CO9NoteTaker9RNCryptor11DecryptorV3", "precondition"]
+- !private ["CO9NoteTaker9RNCryptor11DecryptorV3", "requiredHeaderSize"]
+- ["CO9NoteTaker9RNCryptor11DecryptorV3", "update"]
+- !private ["VE10FoundationSS8Encoding", "utf8"]
+- ["CO9NoteTaker9RNCryptor9Encryptor", "Data"]
+- ["CO9NoteTaker9RNCryptor9Encryptor", "EncryptorV3"]
+- ["CO9NoteTaker9RNCryptor9Encryptor", "String"]
+- ["CO9NoteTaker9RNCryptor9Encryptor", "deinit"]
+- ["CO9NoteTaker9RNCryptor9Encryptor", "encrypt"]
+- !private ["CO9NoteTaker9RNCryptor9Encryptor", "encryptor"]
+- ["CO9NoteTaker9RNCryptor9Encryptor", "finalData"]
+- ["CO9NoteTaker9RNCryptor9Encryptor", "init"]
+- !private ["CO9NoteTaker9RNCryptor9Encryptor", "precondition"]
+- ["CO9NoteTaker9RNCryptor9Encryptor", "update"]
+- ["CO9NoteTaker9RNCryptor11EncryptorV3", "Data"]
+- ["CO9NoteTaker9RNCryptor11EncryptorV3", "Engine"]
+- ["CO9NoteTaker9RNCryptor11EncryptorV3", "HMACV3"]
+- !private ["CO9NoteTaker9RNCryptor11EncryptorV3", "RNCryptor"]
+- ["CO9NoteTaker9RNCryptor11EncryptorV3", "String"]
+- !private ["CO9NoteTaker9RNCryptor11EncryptorV3", "UInt8"]
+- !private ["CO9NoteTaker9RNCryptor11EncryptorV3", "V3"]
+- ["CO9NoteTaker9RNCryptor11EncryptorV3", "deinit"]
+- ["CO9NoteTaker9RNCryptor11EncryptorV3", "encrypt"]
+- !private ["CO9NoteTaker9RNCryptor11EncryptorV3", "engine"]
+- ["CO9NoteTaker9RNCryptor11EncryptorV3", "finalData"]
+- !private ["CO9NoteTaker9RNCryptor11EncryptorV3", "handle"]
+- !private ["CO9NoteTaker9RNCryptor11EncryptorV3", "hmac"]
+- ["CO9NoteTaker9RNCryptor11EncryptorV3", "init"]
+- !private ["CO9NoteTaker9RNCryptor11EncryptorV3", "oneshot"]
+- !private ["CO9NoteTaker9RNCryptor11EncryptorV3", "pendingHeader"]
+- !private ["CO9NoteTaker9RNCryptor11EncryptorV3", "precondition"]
+- ["CO9NoteTaker9RNCryptor11EncryptorV3", "update"]
+- !private ["C9NoteTaker6Engine", "CCAlgorithm"]
+- !private ["C9NoteTaker6Engine", "CCCryptorCreate"]
+- !private ["C9NoteTaker6Engine", "CCCryptorFinal"]
+- !private ["C9NoteTaker6Engine", "CCCryptorGetOutputLength"]
+- ["C9NoteTaker6Engine", "CCCryptorRef"]
+- !private ["C9NoteTaker6Engine", "CCCryptorRelease"]
+- !private ["C9NoteTaker6Engine", "CCCryptorStatus"]
+- !private ["C9NoteTaker6Engine", "CCCryptorUpdate"]
+- !private ["C9NoteTaker6Engine", "CCOptions"]
+- ["C9NoteTaker6Engine", "CryptorOperation"]
+- ["C9NoteTaker6Engine", "Data"]
+- ["C9NoteTaker6Engine", "Int"]
+- !private ["C9NoteTaker6Engine", "UInt8"]
+- !private ["C9NoteTaker6Engine", "UnsafePointer"]
+- !private ["C9NoteTaker6Engine", "assert"]
+- !private ["C9NoteTaker6Engine", "buffer"]
+- !private ["C9NoteTaker6Engine", "cryptor"]
+- ["C9NoteTaker6Engine", "deinit"]
+- ["C9NoteTaker6Engine", "finalData"]
+- ["C9NoteTaker6Engine", "init"]
+- !private ["C9NoteTaker6Engine", "kCCAlgorithmAES128"]
+- !private ["C9NoteTaker6Engine", "kCCOptionPKCS7Padding"]
+- !private ["C9NoteTaker6Engine", "kCCSuccess"]
+- ["C9NoteTaker6Engine", "sizeBuffer"]
+- ["C9NoteTaker6Engine", "update"]
+- !private ["Ps9Equatable", "Encoding"]
+- ["Ps9Equatable", "_code"]
+- ["Ps9Equatable", "_domain"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_getEmbeddedNSError"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- ["Ps9Equatable", "_userInfo"]
+- !private ["Ps9Equatable", "append"]
+- !private ["Ps9Equatable", "count"]
+- !private ["Ps9Equatable", "data"]
+- !private ["Ps9Equatable", "decrypt"]
+- !private ["Ps9Equatable", "encrypt"]
+- !private ["Ps9Equatable", "enumerated"]
+- ["Ps9Equatable", "hashValue"]
+- !private ["Ps9Equatable", "hmacMismatch"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "invalidCredentialType"]
+- !private ["Ps9Equatable", "malloc"]
+- !private ["Ps9Equatable", "messageTooShort"]
+- ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "replaceSubrange"]
+- !private ["Ps9Equatable", "subdata"]
+- !private ["Ps9Equatable", "subscript"]
+- !private ["Ps9Equatable", "unknownHeader"]
+- !private ["Ps9Equatable", "utf8"]
+- !private ["Ps9Equatable", "withUnsafeBytes"]
+- !private ["Ps9Equatable", "withUnsafeMutableBytes"]
+- ["Ps9Equatable", ""]
+- ["OO9NoteTaker9RNCryptor5Error", "RawValue"]
+- ["OO9NoteTaker9RNCryptor5Error", "_code"]
+- ["OO9NoteTaker9RNCryptor5Error", "_domain"]
+- ["OO9NoteTaker9RNCryptor5Error", "_getEmbeddedNSError"]
+- ["OO9NoteTaker9RNCryptor5Error", "_toAnyHashable"]
+- ["OO9NoteTaker9RNCryptor5Error", "_userInfo"]
+- ["OO9NoteTaker9RNCryptor5Error", "deinit"]
+- ["OO9NoteTaker9RNCryptor5Error", "hashValue"]
+- ["OO9NoteTaker9RNCryptor5Error", "hmacMismatch"]
+- ["OO9NoteTaker9RNCryptor5Error", "init"]
+- ["OO9NoteTaker9RNCryptor5Error", "invalidCredentialType"]
+- ["OO9NoteTaker9RNCryptor5Error", "memoryFailure"]
+- ["OO9NoteTaker9RNCryptor5Error", "messageTooShort"]
+- ["OO9NoteTaker9RNCryptor5Error", "rawValue"]
+- ["OO9NoteTaker9RNCryptor5Error", "unknownHeader"]
+- ["Ps5Error", "_code"]
+- ["Ps5Error", "_domain"]
+- ["Ps5Error", "_getEmbeddedNSError"]
+- ["Ps5Error", "_toAnyHashable"]
+- ["Ps5Error", "_userInfo"]
+- ["Ps5Error", "hashValue"]
+- !private ["Ps5Error", "hmacMismatch"]
+- ["Ps5Error", "init"]
+- !private ["Ps5Error", "invalidCredentialType"]
+- !private ["Ps5Error", "messageTooShort"]
+- ["Ps5Error", "rawValue"]
+- !private ["Ps5Error", "unknownHeader"]
+- ["Ps5Error", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "isEmpty"]
+- !private ["Ps25ExpressibleByArrayLiteral", "splitPassFail"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "Encoding"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "data"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "Encoding"]
+- !private ["Ps26ExpressibleByStringLiteral", "data"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "Encoding"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "data"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["CO9NoteTaker9RNCryptor8FormatV3", "CCCryptorStatus"]
+- !private ["CO9NoteTaker9RNCryptor8FormatV3", "CCKeyDerivationPBKDF"]
+- !private ["CO9NoteTaker9RNCryptor8FormatV3", "CCPBKDFAlgorithm"]
+- !private ["CO9NoteTaker9RNCryptor8FormatV3", "CCPseudoRandomAlgorithm"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "CC_SHA256_DIGEST_LENGTH"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "Data"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "Int"]
+- !private ["CO9NoteTaker9RNCryptor8FormatV3", "Int8"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "String"]
+- !private ["CO9NoteTaker9RNCryptor8FormatV3", "UInt32"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "UInt8"]
+- !private ["CO9NoteTaker9RNCryptor8FormatV3", "UnsafeMutablePointer"]
+- !private ["CO9NoteTaker9RNCryptor8FormatV3", "UnsafePointer"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "deinit"]
+- !private ["CO9NoteTaker9RNCryptor8FormatV3", "fatalError"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "formatVersion"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "hmacSize"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "init"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "ivSize"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "kCCBlockSizeAES128"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "kCCKeySizeAES256"]
+- !private ["CO9NoteTaker9RNCryptor8FormatV3", "kCCPBKDF2"]
+- !private ["CO9NoteTaker9RNCryptor8FormatV3", "kCCPRFHmacAlgSHA1"]
+- !private ["CO9NoteTaker9RNCryptor8FormatV3", "kCCSuccess"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "keyHeaderSize"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "keySize"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "makeKey"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "passwordHeaderSize"]
+- ["CO9NoteTaker9RNCryptor8FormatV3", "saltSize"]
+- !private ["Ps8Hashable", "Encoding"]
+- ["Ps8Hashable", "_code"]
+- ["Ps8Hashable", "_domain"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_getEmbeddedNSError"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- ["Ps8Hashable", "_userInfo"]
+- !private ["Ps8Hashable", "append"]
+- !private ["Ps8Hashable", "count"]
+- !private ["Ps8Hashable", "data"]
+- !private ["Ps8Hashable", "decrypt"]
+- !private ["Ps8Hashable", "encrypt"]
+- !private ["Ps8Hashable", "enumerated"]
+- ["Ps8Hashable", "hashValue"]
+- !private ["Ps8Hashable", "hmacMismatch"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "invalidCredentialType"]
+- !private ["Ps8Hashable", "malloc"]
+- !private ["Ps8Hashable", "messageTooShort"]
+- ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "replaceSubrange"]
+- !private ["Ps8Hashable", "subdata"]
+- !private ["Ps8Hashable", "subscript"]
+- !private ["Ps8Hashable", "unknownHeader"]
+- !private ["Ps8Hashable", "utf8"]
+- !private ["Ps8Hashable", "withUnsafeBytes"]
+- !private ["Ps8Hashable", "withUnsafeMutableBytes"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "hashValue"]
+- ["Si", "init"]
+- !private ["Vs5Int32", "init"]
+- !private ["Ps7Integer", "hashValue"]
+- ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- ["Ps17IntegerArithmetic", "init"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "Encoding"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "data"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "Encoding"]
+- !private ["Ps10MirrorPath", "data"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "count"]
+- !private ["Ps17MutableCollection", "enumerated"]
+- ["Ps17MutableCollection", "init"]
+- !private ["Ps17MutableCollection", "isEmpty"]
+- !private ["Ps17MutableCollection", "malloc"]
+- !private ["Ps17MutableCollection", "replaceSubrange"]
+- !private ["Ps17MutableCollection", "splitPassFail"]
+- !private ["Ps17MutableCollection", "subdata"]
+- !private ["Ps17MutableCollection", "subscript"]
+- !private ["Ps17MutableCollection", "withUnsafeBytes"]
+- !private ["Ps17MutableCollection", "withUnsafeMutableBytes"]
+- !private ["PSo8NSCoding", "Encoding"]
+- !private ["PSo8NSCoding", "data"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "Encoding"]
+- !private ["PSo9NSCopying", "data"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "Encoding"]
+- !private ["PSo16NSMutableCopying", "data"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "Encoding"]
+- !private ["CSo8NSObject", "data"]
+- !private ["PSo16NSObjectProtocol", "Encoding"]
+- !private ["PSo16NSObjectProtocol", "data"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo14NSSecureCoding", "Encoding"]
+- !private ["PSo14NSSecureCoding", "data"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "Encoding"]
+- !private ["CSo8NSString", "data"]
+- !private ["CSo8NSString", "init"]
+- ["C9NoteTaker17OverflowingBuffer", "Data"]
+- ["C9NoteTaker17OverflowingBuffer", "Int"]
+- !private ["C9NoteTaker17OverflowingBuffer", "assert"]
+- !private ["C9NoteTaker17OverflowingBuffer", "buffer"]
+- ["C9NoteTaker17OverflowingBuffer", "capacity"]
+- ["C9NoteTaker17OverflowingBuffer", "deinit"]
+- ["C9NoteTaker17OverflowingBuffer", "finalData"]
+- ["C9NoteTaker17OverflowingBuffer", "init"]
+- !private ["C9NoteTaker17OverflowingBuffer", "sendAll"]
+- !private ["C9NoteTaker17OverflowingBuffer", "sendSome"]
+- ["C9NoteTaker17OverflowingBuffer", "update"]
+- !private ["O9NoteTaker9RNCryptor", "Bool"]
+- !private ["O9NoteTaker9RNCryptor", "CCCryptorStatus"]
+- !private ["O9NoteTaker9RNCryptor", "CCKeyDerivationPBKDF"]
+- !private ["O9NoteTaker9RNCryptor", "CCPBKDFAlgorithm"]
+- !private ["O9NoteTaker9RNCryptor", "CCPseudoRandomAlgorithm"]
+- ["O9NoteTaker9RNCryptor", "CC_SHA256_DIGEST_LENGTH"]
+- ["O9NoteTaker9RNCryptor", "Credential"]
+- ["O9NoteTaker9RNCryptor", "Data"]
+- ["O9NoteTaker9RNCryptor", "Decryptor"]
+- ["O9NoteTaker9RNCryptor", "DecryptorEngineV3"]
+- ["O9NoteTaker9RNCryptor", "DecryptorV3"]
+- ["O9NoteTaker9RNCryptor", "Encryptor"]
+- ["O9NoteTaker9RNCryptor", "EncryptorV3"]
+- ["O9NoteTaker9RNCryptor", "Engine"]
+- ["O9NoteTaker9RNCryptor", "Error"]
+- ["O9NoteTaker9RNCryptor", "FormatV3"]
+- ["O9NoteTaker9RNCryptor", "HMACV3"]
+- ["O9NoteTaker9RNCryptor", "Int"]
+- !private ["O9NoteTaker9RNCryptor", "Int8"]
+- !private ["O9NoteTaker9RNCryptor", "RNCryptor"]
+- ["O9NoteTaker9RNCryptor", "RNCryptorType"]
+- !private ["O9NoteTaker9RNCryptor", "Range"]
+- !private ["O9NoteTaker9RNCryptor", "SecRandomCopyBytes"]
+- ["O9NoteTaker9RNCryptor", "String"]
+- ["O9NoteTaker9RNCryptor", "Swift"]
+- !private ["O9NoteTaker9RNCryptor", "UInt32"]
+- ["O9NoteTaker9RNCryptor", "UInt8"]
+- !private ["O9NoteTaker9RNCryptor", "UnsafeMutablePointer"]
+- !private ["O9NoteTaker9RNCryptor", "UnsafePointer"]
+- !private ["O9NoteTaker9RNCryptor", "V3"]
+- ["O9NoteTaker9RNCryptor", "VersionedDecryptorType"]
+- !private ["O9NoteTaker9RNCryptor", "assert"]
+- ["O9NoteTaker9RNCryptor", "decrypt"]
+- ["O9NoteTaker9RNCryptor", "encrypt"]
+- !private ["O9NoteTaker9RNCryptor", "errSecSuccess"]
+- !private ["O9NoteTaker9RNCryptor", "fatalError"]
+- ["O9NoteTaker9RNCryptor", "kCCBlockSizeAES128"]
+- ["O9NoteTaker9RNCryptor", "kCCKeySizeAES256"]
+- !private ["O9NoteTaker9RNCryptor", "kCCPBKDF2"]
+- !private ["O9NoteTaker9RNCryptor", "kCCPRFHmacAlgSHA1"]
+- !private ["O9NoteTaker9RNCryptor", "kCCSuccess"]
+- !private ["O9NoteTaker9RNCryptor", "kSecRandomDefault"]
+- !private ["O9NoteTaker9RNCryptor", "precondition"]
+- ["O9NoteTaker9RNCryptor", "randomData"]
+- !private ["P9NoteTaker13RNCryptorType", "Bool"]
+- ["P9NoteTaker13RNCryptorType", "Data"]
+- !private ["P9NoteTaker13RNCryptorType", "DecryptorEngineV3"]
+- ["P9NoteTaker13RNCryptorType", "DecryptorV3"]
+- !private ["P9NoteTaker13RNCryptorType", "EncryptorV3"]
+- !private ["P9NoteTaker13RNCryptorType", "Engine"]
+- !private ["P9NoteTaker13RNCryptorType", "Error"]
+- !private ["P9NoteTaker13RNCryptorType", "HMACV3"]
+- !private ["P9NoteTaker13RNCryptorType", "Int"]
+- !private ["P9NoteTaker13RNCryptorType", "RNCryptor"]
+- !private ["P9NoteTaker13RNCryptorType", "Range"]
+- ["P9NoteTaker13RNCryptorType", "String"]
+- !private ["P9NoteTaker13RNCryptorType", "UInt8"]
+- !private ["P9NoteTaker13RNCryptorType", "V3"]
+- !private ["P9NoteTaker13RNCryptorType", "assert"]
+- !private ["P9NoteTaker13RNCryptorType", "buffer"]
+- ["P9NoteTaker13RNCryptorType", "canDecrypt"]
+- !private ["P9NoteTaker13RNCryptorType", "credential"]
+- !private ["P9NoteTaker13RNCryptorType", "decrypt"]
+- !private ["P9NoteTaker13RNCryptorType", "decryptor"]
+- !private ["P9NoteTaker13RNCryptorType", "decryptorEngine"]
+- !private ["P9NoteTaker13RNCryptorType", "decryptors"]
+- !private ["P9NoteTaker13RNCryptorType", "encrypt"]
+- !private ["P9NoteTaker13RNCryptorType", "encryptor"]
+- !private ["P9NoteTaker13RNCryptorType", "engine"]
+- ["P9NoteTaker13RNCryptorType", "finalData"]
+- !private ["P9NoteTaker13RNCryptorType", "handle"]
+- !private ["P9NoteTaker13RNCryptorType", "hmac"]
+- ["P9NoteTaker13RNCryptorType", "init"]
+- !private ["P9NoteTaker13RNCryptorType", "makeEngine"]
+- !private ["P9NoteTaker13RNCryptorType", "oneshot"]
+- !private ["P9NoteTaker13RNCryptorType", "password"]
+- !private ["P9NoteTaker13RNCryptorType", "pendingHeader"]
+- ["P9NoteTaker13RNCryptorType", "preambleSize"]
+- !private ["P9NoteTaker13RNCryptorType", "precondition"]
+- !private ["P9NoteTaker13RNCryptorType", "requiredHeaderSize"]
+- ["P9NoteTaker13RNCryptorType", "update"]
+- ["P9NoteTaker13RNCryptorType", ""]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "count"]
+- !private ["Ps22RandomAccessCollection", "enumerated"]
+- ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps22RandomAccessCollection", "isEmpty"]
+- !private ["Ps22RandomAccessCollection", "malloc"]
+- !private ["Ps22RandomAccessCollection", "replaceSubrange"]
+- !private ["Ps22RandomAccessCollection", "splitPassFail"]
+- !private ["Ps22RandomAccessCollection", "subdata"]
+- !private ["Ps22RandomAccessCollection", "subscript"]
+- !private ["Ps22RandomAccessCollection", "withUnsafeBytes"]
+- !private ["Ps22RandomAccessCollection", "withUnsafeMutableBytes"]
+- !private ["Vs5Range", "init"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
+- !private ["Ps26RangeReplaceableCollection", "enumerated"]
+- ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps26RangeReplaceableCollection", "isEmpty"]
+- !private ["Ps26RangeReplaceableCollection", "malloc"]
+- !private ["Ps26RangeReplaceableCollection", "replaceSubrange"]
+- !private ["Ps26RangeReplaceableCollection", "splitPassFail"]
+- !private ["Ps26RangeReplaceableCollection", "subdata"]
+- !private ["Ps26RangeReplaceableCollection", "subscript"]
+- !private ["Ps26RangeReplaceableCollection", "withUnsafeBytes"]
+- !private ["Ps26RangeReplaceableCollection", "withUnsafeMutableBytes"]
+- ["Ps16RawRepresentable", "_code"]
+- ["Ps16RawRepresentable", "_domain"]
+- ["Ps16RawRepresentable", "_getEmbeddedNSError"]
+- ["Ps16RawRepresentable", "_toAnyHashable"]
+- ["Ps16RawRepresentable", "_userInfo"]
+- !private ["Ps16RawRepresentable", "decrypt"]
+- !private ["Ps16RawRepresentable", "encrypt"]
+- ["Ps16RawRepresentable", "hashValue"]
+- !private ["Ps16RawRepresentable", "hmacMismatch"]
+- ["Ps16RawRepresentable", "init"]
+- !private ["Ps16RawRepresentable", "invalidCredentialType"]
+- !private ["Ps16RawRepresentable", "messageTooShort"]
+- ["Ps16RawRepresentable", "rawValue"]
+- !private ["Ps16RawRepresentable", "unknownHeader"]
+- !private ["Ps16RawRepresentable", "utf8"]
+- ["Ps16RawRepresentable", ""]
+- !private ["P10Foundation20ReferenceConvertible", "append"]
+- !private ["P10Foundation20ReferenceConvertible", "count"]
+- !private ["P10Foundation20ReferenceConvertible", "enumerated"]
+- ["P10Foundation20ReferenceConvertible", "init"]
+- !private ["P10Foundation20ReferenceConvertible", "malloc"]
+- !private ["P10Foundation20ReferenceConvertible", "replaceSubrange"]
+- !private ["P10Foundation20ReferenceConvertible", "subdata"]
+- !private ["P10Foundation20ReferenceConvertible", "subscript"]
+- !private ["P10Foundation20ReferenceConvertible", "withUnsafeBytes"]
+- !private ["P10Foundation20ReferenceConvertible", "withUnsafeMutableBytes"]
+- !private ["Ps8Sequence", "Bool"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "count"]
+- !private ["Ps8Sequence", "enumerated"]
+- ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "isEmpty"]
+- !private ["Ps8Sequence", "malloc"]
+- !private ["Ps8Sequence", "replaceSubrange"]
+- !private ["Ps8Sequence", "splitPassFail"]
+- !private ["Ps8Sequence", "subdata"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Ps8Sequence", "withUnsafeBytes"]
+- !private ["Ps8Sequence", "withUnsafeMutableBytes"]
+- !private ["Ps13SignedInteger", "hashValue"]
+- ["Ps13SignedInteger", "init"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- ["Ps12SignedNumber", "init"]
+- !private ["Vs12StaticString", "init"]
+- !private ["Ps10Strideable", "hashValue"]
+- ["Ps10Strideable", "init"]
+- !private ["SS", "Encoding"]
+- !private ["SS", "data"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "Encoding"]
+- !private ["Ps16TextOutputStream", "data"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "Encoding"]
+- !private ["Ps20TextOutputStreamable", "data"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Vs6UInt32", "init"]
+- ["Vs5UInt8", "init"]
+- ["Ps15UnsignedInteger", "init"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "isEmpty"]
+- !private ["Ps14_ArrayProtocol", "splitPassFail"]
+- !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps23_BidirectionalIndexable", "count"]
+- !private ["Ps23_BidirectionalIndexable", "enumerated"]
+- ["Ps23_BidirectionalIndexable", "init"]
+- !private ["Ps23_BidirectionalIndexable", "isEmpty"]
+- !private ["Ps23_BidirectionalIndexable", "malloc"]
+- !private ["Ps23_BidirectionalIndexable", "replaceSubrange"]
+- !private ["Ps23_BidirectionalIndexable", "splitPassFail"]
+- !private ["Ps23_BidirectionalIndexable", "subdata"]
+- !private ["Ps23_BidirectionalIndexable", "subscript"]
+- !private ["Ps23_BidirectionalIndexable", "withUnsafeBytes"]
+- !private ["Ps23_BidirectionalIndexable", "withUnsafeMutableBytes"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "isEmpty"]
+- !private ["Ps24_DestructorSafeContainer", "splitPassFail"]
+- ["Ps28_DisallowMixedSignArithmetic", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "Encoding"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "data"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "Encoding"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "data"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "Encoding"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "data"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "Encoding"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "data"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "Encoding"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "data"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "Encoding"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "data"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Encoding"]
+- ["Ps9_Hashable", "_code"]
+- ["Ps9_Hashable", "_domain"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_getEmbeddedNSError"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- ["Ps9_Hashable", "_userInfo"]
+- !private ["Ps9_Hashable", "append"]
+- !private ["Ps9_Hashable", "count"]
+- !private ["Ps9_Hashable", "data"]
+- !private ["Ps9_Hashable", "decrypt"]
+- !private ["Ps9_Hashable", "encrypt"]
+- !private ["Ps9_Hashable", "enumerated"]
+- ["Ps9_Hashable", "hashValue"]
+- !private ["Ps9_Hashable", "hmacMismatch"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "invalidCredentialType"]
+- !private ["Ps9_Hashable", "malloc"]
+- !private ["Ps9_Hashable", "messageTooShort"]
+- ["Ps9_Hashable", "rawValue"]
+- !private ["Ps9_Hashable", "replaceSubrange"]
+- !private ["Ps9_Hashable", "subdata"]
+- !private ["Ps9_Hashable", "subscript"]
+- !private ["Ps9_Hashable", "unknownHeader"]
+- !private ["Ps9_Hashable", "utf8"]
+- !private ["Ps9_Hashable", "withUnsafeBytes"]
+- !private ["Ps9_Hashable", "withUnsafeMutableBytes"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "hashValue"]
+- ["Ps14_Incrementable", "init"]
+- !private ["Ps10_Indexable", "Bool"]
+- !private ["Ps10_Indexable", "Iterator"]
+- !private ["Ps10_Indexable", "append"]
+- !private ["Ps10_Indexable", "count"]
+- !private ["Ps10_Indexable", "enumerated"]
+- ["Ps10_Indexable", "init"]
+- !private ["Ps10_Indexable", "isEmpty"]
+- !private ["Ps10_Indexable", "malloc"]
+- !private ["Ps10_Indexable", "replaceSubrange"]
+- !private ["Ps10_Indexable", "splitPassFail"]
+- !private ["Ps10_Indexable", "subdata"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps10_Indexable", "withUnsafeBytes"]
+- !private ["Ps10_Indexable", "withUnsafeMutableBytes"]
+- !private ["Ps14_IndexableBase", "Bool"]
+- !private ["Ps14_IndexableBase", "Iterator"]
+- !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps14_IndexableBase", "count"]
+- !private ["Ps14_IndexableBase", "enumerated"]
+- ["Ps14_IndexableBase", "init"]
+- !private ["Ps14_IndexableBase", "isEmpty"]
+- !private ["Ps14_IndexableBase", "malloc"]
+- !private ["Ps14_IndexableBase", "replaceSubrange"]
+- !private ["Ps14_IndexableBase", "splitPassFail"]
+- !private ["Ps14_IndexableBase", "subdata"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps14_IndexableBase", "withUnsafeBytes"]
+- !private ["Ps14_IndexableBase", "withUnsafeMutableBytes"]
+- !private ["Ps8_Integer", "hashValue"]
+- ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- ["Ps18_IntegerArithmetic", "init"]
+- !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps17_MutableIndexable", "count"]
+- !private ["Ps17_MutableIndexable", "enumerated"]
+- ["Ps17_MutableIndexable", "init"]
+- !private ["Ps17_MutableIndexable", "isEmpty"]
+- !private ["Ps17_MutableIndexable", "malloc"]
+- !private ["Ps17_MutableIndexable", "replaceSubrange"]
+- !private ["Ps17_MutableIndexable", "splitPassFail"]
+- !private ["Ps17_MutableIndexable", "subdata"]
+- !private ["Ps17_MutableIndexable", "subscript"]
+- !private ["Ps17_MutableIndexable", "withUnsafeBytes"]
+- !private ["Ps17_MutableIndexable", "withUnsafeMutableBytes"]
+- !private ["Ps21_ObjectiveCBridgeable", "Encoding"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "data"]
+- !private ["Ps21_ObjectiveCBridgeable", "enumerated"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "isEmpty"]
+- !private ["Ps21_ObjectiveCBridgeable", "malloc"]
+- !private ["Ps21_ObjectiveCBridgeable", "replaceSubrange"]
+- !private ["Ps21_ObjectiveCBridgeable", "splitPassFail"]
+- !private ["Ps21_ObjectiveCBridgeable", "subdata"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "withUnsafeBytes"]
+- !private ["Ps21_ObjectiveCBridgeable", "withUnsafeMutableBytes"]
+- !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps22_RandomAccessIndexable", "count"]
+- !private ["Ps22_RandomAccessIndexable", "enumerated"]
+- ["Ps22_RandomAccessIndexable", "init"]
+- !private ["Ps22_RandomAccessIndexable", "isEmpty"]
+- !private ["Ps22_RandomAccessIndexable", "malloc"]
+- !private ["Ps22_RandomAccessIndexable", "replaceSubrange"]
+- !private ["Ps22_RandomAccessIndexable", "splitPassFail"]
+- !private ["Ps22_RandomAccessIndexable", "subdata"]
+- !private ["Ps22_RandomAccessIndexable", "subscript"]
+- !private ["Ps22_RandomAccessIndexable", "withUnsafeBytes"]
+- !private ["Ps22_RandomAccessIndexable", "withUnsafeMutableBytes"]
+- !private ["Ps26_RangeReplaceableIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "count"]
+- !private ["Ps26_RangeReplaceableIndexable", "enumerated"]
+- ["Ps26_RangeReplaceableIndexable", "init"]
+- !private ["Ps26_RangeReplaceableIndexable", "isEmpty"]
+- !private ["Ps26_RangeReplaceableIndexable", "malloc"]
+- !private ["Ps26_RangeReplaceableIndexable", "replaceSubrange"]
+- !private ["Ps26_RangeReplaceableIndexable", "splitPassFail"]
+- !private ["Ps26_RangeReplaceableIndexable", "subdata"]
+- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
+- !private ["Ps26_RangeReplaceableIndexable", "withUnsafeBytes"]
+- !private ["Ps26_RangeReplaceableIndexable", "withUnsafeMutableBytes"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- ["Ps14_SignedInteger", "init"]
+- !private ["Ps11_Strideable", "hashValue"]
+- ["Ps11_Strideable", "init"]
+- ["Ps14_StringElement", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- "Ps23BidirectionalCollection"
+- "Ps17BitwiseOperations"
+- !private "Sb"
+- !private "VSC13CCHmacContext"
+- "Ps7CVarArg"
+- "Ps10Collection"
+- "Ps10Comparable"
+- "O9NoteTaker16CryptorOperation"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "V10Foundation4Data"
+- !private "OV10Foundation4Data11Deallocator"
+- "CO9NoteTaker9RNCryptor9Decryptor"
+- "CO9NoteTaker9RNCryptor11DecryptorV3"
+- !private "VE10FoundationSS8Encoding"
+- "CO9NoteTaker9RNCryptor9Encryptor"
+- "CO9NoteTaker9RNCryptor11EncryptorV3"
+- "C9NoteTaker6Engine"
+- "Ps9Equatable"
+- "OO9NoteTaker9RNCryptor5Error"
+- "Ps5Error"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "CO9NoteTaker9RNCryptor8FormatV3"
+- "Ps8Hashable"
+- "Si"
+- !private "Vs5Int32"
+- "Ps7Integer"
+- "Ps17IntegerArithmetic"
+- !private "Ps16IteratorProtocol"
+- !private "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "Ps17MutableCollection"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "C9NoteTaker17OverflowingBuffer"
+- "O9NoteTaker9RNCryptor"
+- "P9NoteTaker13RNCryptorType"
+- "Ps22RandomAccessCollection"
+- !private "Vs5Range"
+- "Ps26RangeReplaceableCollection"
+- "Ps16RawRepresentable"
+- "P10Foundation20ReferenceConvertible"
+- "Ps8Sequence"
+- "Ps13SignedInteger"
+- "Ps12SignedNumber"
+- !private "Vs12StaticString"
+- "Ps10Strideable"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "Vs6UInt32"
+- "Vs5UInt8"
+- "Ps15UnsignedInteger"
+- !private "Ps14_ArrayProtocol"
+- "Ps23_BidirectionalIndexable"
+- !private "Ps24_DestructorSafeContainer"
+- "Ps28_DisallowMixedSignArithmetic"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps14_Incrementable"
+- "Ps10_Indexable"
+- "Ps14_IndexableBase"
+- "Ps8_Integer"
+- "Ps18_IntegerArithmetic"
+- "Ps17_MutableIndexable"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps22_RandomAccessIndexable"
+- "Ps26_RangeReplaceableIndexable"
+- "Ps14_SignedInteger"
+- "Ps11_Strideable"
+- "Ps14_StringElement"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AudioToolbox.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/dbessonov/Downloads/iOS-NoteTaker-master/NoteTaker/Bridge.h"
+- "/Users/dbessonov/Downloads/iOS-NoteTaker-master/NoteTaker/RNCryptor.h"
+interface-hash: "fd9399684f8138422428d6550adf9453"

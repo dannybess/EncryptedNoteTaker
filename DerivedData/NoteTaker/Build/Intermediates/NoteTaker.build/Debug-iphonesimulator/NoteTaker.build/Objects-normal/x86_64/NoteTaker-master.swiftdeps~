@@ -1,0 +1,13 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "395f5e7f5647ec23b3cd2b22e304bce0"
+build_time: [552001271, 441713000]
+inputs:
+  "/Users/dbessonov/Downloads/iOS-NoteTaker-master/NoteTaker/NewNoteViewController.swift": [552000594, 0]
+  "/Users/dbessonov/Downloads/iOS-NoteTaker-master/Note+CoreDataClass.swift": [551225411, 0]
+  "/Users/dbessonov/Downloads/iOS-NoteTaker-master/NoteTaker/NoteTakerViewController.swift": [552001271, 0]
+  "/Users/dbessonov/Downloads/iOS-NoteTaker-master/NoteTaker/RegisterViewController.swift": [551999062, 0]
+  "/Users/dbessonov/Downloads/iOS-NoteTaker-master/NoteTaker/AppDelegate.swift": [551996851, 0]
+  "/Users/dbessonov/Downloads/iOS-NoteTaker-master/NoteTaker/RNCryptor.swift": [541546678, 0]
+  "/Users/dbessonov/Downloads/iOS-NoteTaker-master/DerivedData/NoteTaker/Build/Intermediates/NoteTaker.build/Debug-iphonesimulator/NoteTaker.build/DerivedSources/CoreDataGenerated/License/License+CoreDataClass.swift": [551998294, 0]
+  "/Users/dbessonov/Downloads/iOS-NoteTaker-master/DerivedData/NoteTaker/Build/Intermediates/NoteTaker.build/Debug-iphonesimulator/NoteTaker.build/DerivedSources/CoreDataGenerated/License/License+CoreDataProperties.swift": [551998294, 0]
+  "/Users/dbessonov/Downloads/iOS-NoteTaker-master/DerivedData/NoteTaker/Build/Intermediates/NoteTaker.build/Debug-iphonesimulator/NoteTaker.build/DerivedSources/CoreDataGenerated/License/License+CoreDataModel.swift": [551998294, 0]

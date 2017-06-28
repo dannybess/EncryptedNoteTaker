@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		213E0D7A1F044461004DC4EE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213E0D791F044461004DC4EE /* RegisterViewController.swift */; };
+		213E0D7D1F04453A004DC4EE /* License.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 213E0D7B1F04453A004DC4EE /* License.xcdatamodeld */; };
 		216CA4211EF880100051600D /* RNCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216CA4201EF880100051600D /* RNCryptor.swift */; };
 		3426FD831E081C93005CEAF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426FD821E081C93005CEAF5 /* AppDelegate.swift */; };
 		3426FD851E081C93005CEAF5 /* NoteTakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426FD841E081C93005CEAF5 /* NoteTakerViewController.swift */; };
@@ -61,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		213E0D791F044461004DC4EE /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		213E0D7C1F04453A004DC4EE /* License.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = License.xcdatamodel; sourceTree = "<group>"; };
 		216CA4201EF880100051600D /* RNCryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCryptor.swift; sourceTree = "<group>"; };
 		216CA4221EF880380051600D /* RNCryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
 		216CA4231EF880410051600D /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
@@ -156,8 +160,10 @@
 			children = (
 				34978EB51E0881A5006D7659 /* Assets */,
 				3426FD821E081C93005CEAF5 /* AppDelegate.swift */,
+				213E0D7B1F04453A004DC4EE /* License.xcdatamodeld */,
 				3426FD841E081C93005CEAF5 /* NoteTakerViewController.swift */,
 				3426FD861E081C93005CEAF5 /* Main.storyboard */,
+				213E0D791F044461004DC4EE /* RegisterViewController.swift */,
 				34A0B2521E2155CE004822CE /* NewNoteViewController.swift */,
 				216CA4221EF880380051600D /* RNCryptor.h */,
 				216CA4201EF880100051600D /* RNCryptor.swift */,
@@ -286,6 +292,7 @@
 				TargetAttributes = {
 					3426FD7E1E081C93005CEAF5 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = U7GHKH5D2P;
 						ProvisioningStyle = Automatic;
 					};
 					3426FD951E081C93005CEAF5 = {
@@ -379,8 +386,10 @@
 				34A0B2531E2155CE004822CE /* NewNoteViewController.swift in Sources */,
 				34A0B2601E217523004822CE /* Note+CoreDataClass.swift in Sources */,
 				3426FD851E081C93005CEAF5 /* NoteTakerViewController.swift in Sources */,
+				213E0D7A1F044461004DC4EE /* RegisterViewController.swift in Sources */,
 				3426FD831E081C93005CEAF5 /* AppDelegate.swift in Sources */,
 				216CA4211EF880100051600D /* RNCryptor.swift in Sources */,
+				213E0D7D1F04453A004DC4EE /* License.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U7GHKH5D2P;
 				INFOPLIST_FILE = NoteTaker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -544,6 +554,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U7GHKH5D2P;
 				INFOPLIST_FILE = NoteTaker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -650,6 +661,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		213E0D7B1F04453A004DC4EE /* License.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				213E0D7C1F04453A004DC4EE /* License.xcdatamodel */,
+			);
+			currentVersion = 213E0D7C1F04453A004DC4EE /* License.xcdatamodel */;
+			path = License.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		3426FD891E081C93005CEAF5 /* NoteTaker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

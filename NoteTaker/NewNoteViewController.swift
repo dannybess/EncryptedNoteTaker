@@ -10,8 +10,54 @@ import UIKit
 import AVFoundation
 import CoreData
 
-class NewNoteViewController: UIViewController {
+extension UnicodeScalar {
+    var isEmoji: Bool {
+        switch value {
+        case 0x1F600...0x1F64F, // Emoticons
+        0x1F300...0x1F5FF, // Misc Symbols and Pictographs
+        0x1F680...0x1F6FF, // Transport and Map
+        0x2600...0x26FF,   // Misc symbols
+        0x2700...0x27BF,   // Dingbats
+        0xFE00...0xFE0F,   // Variation Selectors
+        0x1F900...0x1F9FF,  // Supplemental Symbols and Pictographs
+        65024...65039, // Variation selector
+        8400...8447: // Combining Diacritical Marks for Symbols
+            return true
+        default: return false
+        }
+    }
+    var isZeroWidthJoiner: Bool {
+        return value == 8205
+    }
+}
+
+extension String {
     
+    var glyphCount: Int {
+        let richText = NSAttributedString(string: self)
+        let line = CTLineCreateWithAttributedString(richText)
+        return CTLineGetGlyphCount(line)
+    }
+    
+    var isSingleEmoji: Bool {
+        return glyphCount == 1 && containsEmoji
+    }
+    
+    var containsEmoji: Bool {
+        return unicodeScalars.contains { $0.isEmoji }
+    }
+    
+    var containsOnlyEmoji: Bool {
+        return !isEmpty
+            && !unicodeScalars.contains(where: {
+                !$0.isEmoji
+                    && !$0.isZeroWidthJoiner
+            })
+    }
+    
+}
+
+class NewNoteViewController: UIViewController {
     
     @IBOutlet weak var noteTitle: UITextField!
     @IBOutlet weak var recordButton: UIButton!
@@ -44,25 +90,33 @@ class NewNoteViewController: UIViewController {
     }
     
     @IBAction func save(_ sender: Any) {
-        
-        if (noteTitle.text != "") {
-            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-            let note = NSEntityDescription.insertNewObject(forEntityName: "Note", into: context) as! Note
-            let data : NSData = noteTitle.text!.data(using: String.Encoding.nonLossyASCII) as! NSData
-            let password = "Secret password"
-            let cipherText = RNCryptor.encrypt(data: data as Data, withPassword: password)
-            print("Hellowordl")
-            note.name = cipherText as Data
-            //note.url = audioURL
-        
-            do {
-                try context.save()
-            } catch let saveError as NSError {
-                print("Save error: \(saveError.localizedDescription)")
+        if(noteTitle.text!.containsEmoji) {
+            if(emojiEnabled) {
+                if (noteTitle.text != "") {
+                    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+                    let note = NSEntityDescription.insertNewObject(forEntityName: "Note", into: context) as! Note
+                    let data : NSData = noteTitle.text!.data(using: String.Encoding.nonLossyASCII) as! NSData
+                    let password = "Secret password"
+                    let cipherText = RNCryptor.encrypt(data: data as Data, withPassword: password)
+                    note.name = cipherText as Data
+                }
             }
-            
+            else {
+                let alert = UIAlertController(title: "Error", message: "You cannot save emojis! Please register a license key!", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
         }
-        
+        else {
+            if (noteTitle.text != "") {
+                let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+                let note = NSEntityDescription.insertNewObject(forEntityName: "Note", into: context) as! Note
+                let data : NSData = noteTitle.text!.data(using: String.Encoding.nonLossyASCII) as! NSData
+                let password = "Secret password"
+                let cipherText = RNCryptor.encrypt(data: data as Data, withPassword: password)
+                note.name = cipherText as Data
+            }
+        }
         self.dismiss(animated: true, completion: nil)
     }
 
